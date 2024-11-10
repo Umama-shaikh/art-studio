@@ -1,0 +1,42 @@
+.main{
+    background-color:  rgb(3, 16, 36);
+    margin-top: 100px;
+    color: white;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+
+}
+
+.heading{
+    text-align: center;
+    font-family: 'Gloock';
+    font-weight: 200;
+    font-size: 5rem;
+    padding-top: 30px;
+}
+.h4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family:  'Gloock' ;
+    font-weight: 100;
+    font-size: xx-large;
+    
+}
+
+@media (max-width:768px){
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        min-width: fit-content;
+    }
+    
+}

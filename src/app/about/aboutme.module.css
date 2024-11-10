@@ -1,0 +1,157 @@
+.aboutme {
+    position: relative;
+    overflow: hidden; 
+}
+
+.heading1 {
+    position: relative;
+    top: 44px;
+    right: 20px;
+    z-index: 1;
+    color: #222020;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Mynerve', sans-serif;
+    font-size: 65px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.main1 {
+    margin-top: 44px;
+    display: flex;
+    gap: 55px;
+}
+
+.rightside1 {
+    position: relative;
+    bottom: 55px;
+    padding: 100px;
+}
+
+.heading2 {
+    font-family: 'Gloock';
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.p {
+    line-height: 25px;
+    margin-top: 60px;
+    padding: 0px 30px 0px 0px;
+}
+
+.leftside1 {
+    position: relative;
+    padding-left: 90px;
+    bottom: 55px;
+}
+
+/* down side of about me page */
+.main2 {
+    display: flex;
+    align-items: center;
+    margin: 70px;
+}
+
+.leftside2 {
+    padding: 0px 90px 0px 20px;
+}
+
+.p1 {
+    line-height: 25px;
+    margin-top: 60px;
+    margin-right: 40px;
+    padding: 0px 80px 0px 0px;
+}
+
+.rightside2 {
+    position: relative;
+}
+
+.img3 {
+    max-width: 100%; 
+    height: auto; 
+    position: relative;
+    bottom: 130px;
+    right: 90px;
+    animation: leftside ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.img2 {
+    position: relative;
+    bottom: 90px;
+    left: 50px;
+    animation: rightside ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes leftside {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rightside {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width:1024px) {
+    .main1 {
+        flex-direction: column;
+        margin: 20px 40px;
+        align-items: center; 
+        padding: 0;
+    }
+
+    .leftside1, .rightside1 {
+        padding: 0; 
+        bottom: 0; 
+    }
+
+    .heading1 {
+        font-size: 50px;
+    }
+
+    .heading2 {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    .p, .p1 {
+        padding: 0 10px 60px  10px; 
+        margin-top: 20px; 
+    }
+
+    .main2 {
+        flex-direction: column-reverse; 
+        margin: 20px; 
+    }
+
+    .leftside2 {
+        padding: 0; 
+    }
+
+    /* Adjust images for smaller screens */
+    .img2, .img3 {
+        position: static;
+        left: 0;
+        animation: none;
+        max-width: 100%; 
+        height: auto; 
+        position: relative;
+        bottom: 0;
+    }
+}

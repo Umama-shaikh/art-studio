@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    gap: 23px;
+    font-size: xx-large;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 33px;
+}
+.insta{
+    background-color:black;
+    border-radius: 50%;
+    color: white;
+    padding: 4px;
+    
+}
+.tiktok{
+    background-color:black;
+    border-radius: 50%;
+    color: white;
+    padding: 4px;
+
+}
